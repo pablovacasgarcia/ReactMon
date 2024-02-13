@@ -90,7 +90,6 @@ function Jugar() {
             setMensaje("Incorrecto. El nombre correcto es: " + nombreCorrecto);
             setBrillo(100);
             nuevaPuntuacion -= 1;
-            // Asegurarse de que la nueva puntuación no sea negativa
             if (nuevaPuntuacion < 0) {
                 nuevaPuntuacion = 0;
             }

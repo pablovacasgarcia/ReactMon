@@ -5,10 +5,10 @@ import { detalles } from "../Utils/funciones";
 function Pokemon() {
     const [listaPokemons, setListaPokemons] = useState([]);
     const [url, setUrl] = useState('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=9');
-    const [loading, setLoading] = useState(true); // Estado para controlar la visibilidad del preload
+    const [loading, setLoading] = useState(true);
 
     function cargarMas() {
-        setLoading(true); // Mostrar preload cuando se carguen más datos
+        setLoading(true); 
         fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -22,7 +22,7 @@ function Pokemon() {
             const pokemonData = await detalles(pokemons[i].name);
             setListaPokemons(prevPokemons => [...prevPokemons, pokemonData]);
         }
-        setLoading(false); // Ocultar preload cuando se hayan cargado todos los datos
+        setLoading(false); 
     }
 
     useEffect(() => {
@@ -60,7 +60,7 @@ function Pokemon() {
                 </div>
                 <button onClick={cargarMas}>Cargar más...</button>
             </div>
-            {loading && ( // Mostrar preload si loading es true
+            {loading && ( 
                 <div className="preload">
                     <div className="pokemon"></div>
                 </div>
