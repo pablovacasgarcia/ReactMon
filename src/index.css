@@ -66,3 +66,497 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+header{
+  position: fixed;
+  top: 0vh;
+  left: 0vw;
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(110, 110, 110, 0.608);
+}
+
+header img{
+  width: 7%;
+}
+
+header input{
+  text-align: center;
+  width: 10rem;
+  height: 5vh;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listaPokemon{
+  margin-top: 10rem;
+}
+
+.cartas{
+  width: 80vw;
+  margin-left: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 40px;
+}
+
+.carta {
+  width: 300px;
+  height: 420px;
+  border-radius: 15px;
+  color: black;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+}
+
+.fondo{
+  position: absolute;
+  top: 0;
+  background-image: url(./img/carta.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease-in-out;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.carta:hover .fondo{
+  background-image: url(./img/back.jpg);
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.contenido{
+  transition: transform 0.6s ease-in;
+  z-index: 10;
+}
+
+.carta:hover .contenido{
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.listaPokemon button{
+  margin-top: 2vh;
+}
+
+.nombre{
+  width: 80%;
+}
+
+.nombre span{
+  position: absolute;
+  left: 77%;
+  top: 3%;
+  font-size: 130%;
+}
+
+.nombre::first-letter{
+  text-transform: capitalize;
+}
+
+.imagen{
+  width: 60%;
+}
+
+.titulo{
+  text-transform: capitalize;
+}
+
+.tipos{
+  margin-top: 45px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.grass{
+  background-color: green;
+}
+
+.electric{
+  background-color: yellow;
+}
+
+.water{
+  background-color: blue;
+}
+
+.fire {
+  background-color: red;
+}
+
+.psychic {
+  background-color: purple;
+}
+
+.rock {
+  background-color: gray;
+}
+
+.ice {
+  background-color: lightblue;
+}
+
+.dragon {
+  background-color: darkorange;
+}
+
+.fighting {
+  background-color: darkred;
+}
+
+.flying {
+  background-color: skyblue;
+}
+
+.poison {
+  background-color: darkviolet;
+}
+
+.bug {
+  background-color: limegreen;
+}
+
+.ghost {
+  background-color: darkslategray;
+}
+
+.steel {
+  background-color: darkgray;
+}
+
+.normal {
+  background-color: lightgray;
+}
+
+.dark {
+  background-color: darkslateblue;
+}
+
+.fairy {
+  background-color: pink;
+}
+
+.ground {
+  background-color: sandybrown;
+}
+
+
+.tipo{
+  color: white;
+  width: 80px;
+  border-radius: 50px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  font-size: 80%;
+  box-shadow: 0 0 0 1px black; 
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+header{
+  z-index: 100;
+}
+
+header a{
+  color: white;
+}
+
+.pokemon-imagen{
+  filter: brightness(0);
+  width: auto;
+  height: 15vh;
+  margin-left: -22vw;
+  margin-top: 25vh;
+}
+
+.jugar-container{
+  border-radius: 50px;
+  margin-top: 10vh;
+  width: 42.5vw;
+  height: 70vh;
+  margin-left: -10vw;
+  background-image: url("./img/juego.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 5px black;
+}
+
+.opciones-container{
+  margin-top: -25vh;
+  margin-left: -15vw;
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+  gap: 5vh;
+}
+
+.opciones-container button{
+  text-transform: capitalize;
+}
+
+.opciones-container button:hover{
+  background-color: #535bf2;
+}
+
+.final{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:#000000c6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mensaje{
+  font-weight: bold;
+  font-size: 400%;
+  color: #535bf2;
+  text-shadow:
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+}
+
+.puntuaciones-container{
+  position: absolute;
+  top: 20%;
+  left: 70%;
+}
+
+.puntuaciones-container .top{
+  font-size: 250%!important;
+}
+
+.puntuaciones-container .misPuntos{
+  margin-top: 10vh!important;
+  color: #535bf2;
+  text-shadow:
+    -1px -1px 0 #000000,  
+     1px -1px 0 #000000,
+    -1px  1px 0 #000000,
+     1px  1px 0 #000000;
+}
+
+.preload{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #0000008a;
+  overflow: hidden;
+}
+
+.pokemon {
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  top: 45%;
+  left: 45%;
+  background: linear-gradient(to bottom, rgb(254, 0, 1) 50%, white 50% );
+  border-radius: 50%;
+  border: 8px solid black;
+  animation: spin 1s linear infinite;
+}
+
+.pokemon::before {
+  content: '';
+  position: absolute;
+  height: 8px;
+  width: 100px;
+  background: black;
+  top: 50px;
+  transform: translateX(-50%);
+}
+
+.pokemon::after {
+  content: '';
+  position: absolute;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background: white;
+  top: 50px;
+  left: 50px;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 0 8px black, inset 0 0 0 10px white, inset 0 0 0 12px black;
+
+}
+
+.detalle-container{
+  display: flex;
+  flex-direction: row!important;
+  gap: 8vw;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.portada{
+  width: 40vw;
+}
+
+.gif{
+  height: 10vh;
+  width: 10vh;
+}
+
+canvas{
+  width: 40vw!important;
+}
+
+.datos{
+  margin-top: 10vh;
+  background-color: rgb(220, 220, 220);
+  padding: 20px;
+  padding-top: 0;
+  height: fit-content;
+  border-radius: 15px;
+  font-weight: bold;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px black;
+  color: black;
+}
+
+.datos .tipo{
+  text-align: center;
+  margin-top: -2vh;
+}
+
+.datos p{
+  text-align: left;
+}
+
+.carrousel{
+  margin-top: -10vh;
+  margin-bottom: 5vh;
+  margin-left: 1vw;
+  width: 18vw;
+  height: fit-content;
+}
+
+.carrousel img{
+  
+  height: 40vh;
+}
+
+/* Estilos para el contenedor principal del formulario */
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Estilos para los campos de entrada */
+.login-container input[type="text"],
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Estilos para los botones */
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Estilos para los botones secundarios */
+.login-container button.secondary {
+  background-color: #6c757d;
+}
+
+/* Estilos para el mensaje de error */
+.login-container .error-message {
+  margin-top: 10px;
+  color: #dc3545;
+}
+
+/* Estilos para el botón de cambiar entre inicio de sesión y registro */
+.login-container .toggle-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Estilos para los botones de inicio de sesión con proveedores externos */
+.login-container .external-login-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  color: black;
+}
+
+.external-login-button img{
+  width: 15px;
+}
+
+
+/* Spin Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -18,6 +18,34 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+body{
+  background-image: url('img/fondo.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.portadaPokemon{
+  width: 70vw;
+  position: absolute;
+  left: 20%;
+  top: 36%;
+}
+
+.react{
+  width: 5vw;
+  position: absolute;
+  left: 47%;
+  top: 18%;
+}
+
+.pokeapi{
+  width: 15vw;
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  transform: rotate(10deg);
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +61,3 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
