@@ -112,9 +112,9 @@ function Login() {
                 </form>
             )}
 
-            <button className="external-login-button" onClick={loginWithGoogle}>Iniciar sesión con Google <img src="https://assets.stickpng.com/images/5a951939c4ffc33e8c148af2.png" alt="" /></button>
+            <button className="external-login-button" onClick={loginWithGoogle}>Iniciar sesión con Google <img src="img/google.png" alt="" /></button>
 
-            <button className="external-login-button" onClick={loginWithGithub}>Iniciar sesión con GitHub <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="" /></button>
+            <button className="external-login-button" onClick={loginWithGithub}>Iniciar sesión con GitHub <img src="img/github.png" alt="" /></button>
 
             <button className="toggle-button" onClick={() => setShowLogin(!showLogin)}>
                 {showLogin ? "Registrarse" : "Iniciar Sesión"}

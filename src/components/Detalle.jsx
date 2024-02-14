@@ -89,17 +89,11 @@ function Detalle() {
                         <p className="peso">Peso: {datos.weight / 10} kg</p>
                         <Slider {...settings} className="carrousel">
                             <div>
-                                <img src={datos.sprites.front_default} alt="Frente" />
+                                <img src={datos.sprites.other.home.front_default} alt="Frente" />
                             </div>
                             <div>
-                                <img src={datos.sprites.back_default} alt="Detrás Normal" />
-                            </div>
-                            <div>
-                                <img src={datos.sprites.front_shiny} alt="Frente Shiny" />
-                            </div>
-                            <div>
-                                <img src={datos.sprites.back_shiny} alt="Detrás Shiny" />
-                            </div>                            
+                                <img src={datos.sprites.other.home.front_shiny} alt="Frente Shiny" />
+                            </div>                  
                         </Slider>
                         <audio id="audio" controls>
                             <source src={datos.cries.latest} type="audio/ogg" />

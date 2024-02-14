@@ -380,6 +380,7 @@ header a{
   top: 0;
   background-color: #0000008a;
   overflow: hidden;
+  z-index: 10000;
 }
 
 .pokemon {
@@ -443,7 +444,7 @@ canvas{
 
 .datos{
   margin-top: 10vh;
-  background-color: rgb(220, 220, 220);
+  background-color: rgba(220, 220, 220, 0.512);
   padding: 20px;
   padding-top: 0;
   height: fit-content;
@@ -452,6 +453,9 @@ canvas{
   border: 2px solid black;
   box-shadow: 5px 5px 5px black;
   color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .datos .tipo{
@@ -464,9 +468,7 @@ canvas{
 }
 
 .carrousel{
-  margin-top: -10vh;
   margin-bottom: 5vh;
-  margin-left: 1vw;
   width: 18vw;
   height: fit-content;
 }
@@ -550,6 +552,10 @@ canvas{
   width: 15px;
 }
 
+.error{
+  margin-top: 10%;
+  width: 90%;
+}
 
 /* Spin Animation */
 @keyframes spin {

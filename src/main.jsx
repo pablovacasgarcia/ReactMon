@@ -12,6 +12,8 @@ import Detalle from "./components/Detalle";
 import Login from "./components/Login";
 import { Outlet } from "react-router-dom";
 import Jugar from "./components/jugar";
+import Error from "./components/Error";
+import PrivateRoute from "./components/PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -56,9 +58,14 @@ const router = createBrowserRouter([
       {
         path: "jugar/",
         element: 
-        <>
+        <PrivateRoute>
         <Jugar></Jugar>
-        </>,
+        </PrivateRoute>,
+      },
+      {
+        path: "*",
+        element:
+          <Error></Error>
       }
     ]
   }
